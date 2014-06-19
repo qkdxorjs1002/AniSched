@@ -2,7 +2,7 @@
 
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         My.Settings.Reload()
-        Label10.Text = 0.3
+        Label10.Text = 0.4
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -14,7 +14,7 @@
         If Me.Opacity < 0.1 Then
             Timer2.Enabled = False
             Form1.Show()
-            Form1.TopLevel = True
+            Form1.Focus()
             Timer1.Enabled = False
             Me.Hide()
         End If

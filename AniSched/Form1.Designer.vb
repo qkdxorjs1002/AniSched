@@ -52,9 +52,9 @@ Partial Class Form1
         Me.TESTToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AlertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BlinkToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.맨앞에위치ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.최소화ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.닫기ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.맨앞에위치ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -219,7 +219,7 @@ Partial Class Form1
         '
         Me.투명도ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripTextBox1, Me.적용ToolStripMenuItem})
         Me.투명도ToolStripMenuItem.Name = "투명도ToolStripMenuItem"
-        Me.투명도ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.투명도ToolStripMenuItem.Size = New System.Drawing.Size(138, 22)
         Me.투명도ToolStripMenuItem.Text = "투명도"
         '
         'ToolStripTextBox1
@@ -239,14 +239,14 @@ Partial Class Form1
         '알림ToolStripMenuItem
         '
         Me.알림ToolStripMenuItem.Name = "알림ToolStripMenuItem"
-        Me.알림ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.알림ToolStripMenuItem.Size = New System.Drawing.Size(138, 22)
         Me.알림ToolStripMenuItem.Text = "알림"
         '
         'TESTToolStripMenuItem
         '
         Me.TESTToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AlertToolStripMenuItem, Me.BlinkToolStripMenuItem})
         Me.TESTToolStripMenuItem.Name = "TESTToolStripMenuItem"
-        Me.TESTToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.TESTToolStripMenuItem.Size = New System.Drawing.Size(138, 22)
         Me.TESTToolStripMenuItem.Text = "TEST"
         '
         'AlertToolStripMenuItem
@@ -262,6 +262,13 @@ Partial Class Form1
         Me.BlinkToolStripMenuItem.Size = New System.Drawing.Size(100, 22)
         Me.BlinkToolStripMenuItem.Text = "Blink"
         '
+        '맨앞에위치ToolStripMenuItem
+        '
+        Me.맨앞에위치ToolStripMenuItem.CheckOnClick = True
+        Me.맨앞에위치ToolStripMenuItem.Name = "맨앞에위치ToolStripMenuItem"
+        Me.맨앞에위치ToolStripMenuItem.Size = New System.Drawing.Size(138, 22)
+        Me.맨앞에위치ToolStripMenuItem.Text = "맨앞에 위치"
+        '
         '최소화ToolStripMenuItem
         '
         Me.최소화ToolStripMenuItem.CheckOnClick = True
@@ -274,13 +281,6 @@ Partial Class Form1
         Me.닫기ToolStripMenuItem.Name = "닫기ToolStripMenuItem"
         Me.닫기ToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
         Me.닫기ToolStripMenuItem.Text = "닫기"
-        '
-        '맨앞에위치ToolStripMenuItem
-        '
-        Me.맨앞에위치ToolStripMenuItem.CheckOnClick = True
-        Me.맨앞에위치ToolStripMenuItem.Name = "맨앞에위치ToolStripMenuItem"
-        Me.맨앞에위치ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.맨앞에위치ToolStripMenuItem.Text = "맨앞에 위치"
         '
         'Form1
         '
@@ -306,6 +306,7 @@ Partial Class Form1
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "애니편성표"
+        Me.TopMost = True
         Me.ContextMenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()

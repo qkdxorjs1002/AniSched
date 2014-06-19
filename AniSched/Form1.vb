@@ -47,6 +47,9 @@
         "<html><body>" & _
         "<div id=if style='position:absolute;left:0px;top:-28px'><script src='http://widgetprovider.daum.net/view?url=http://widgetcfs1.daum.net/xml/20/widget/2009/10/15/02/50/4ad60f4c5197a_579.xml&up_docBg=%23FFFFFF&up_docLine=%23EEEEEE&up_docSelBg=%23EEEEEE&up_docSelTx=%23495F90&up_docTx=%23333333&up_mdTx=%23EEEEEE&up_mdSelBg=%23555555&up_mdSelTx=%23FFFFFF&up_mdBg=%23f766a7&&width=304&height=385&widgetId=625&scrap=1' type='text/javascript'></script>" & _
         "</body></html>"
+
+        Dim pid As Integer = Process.GetCurrentProcess.Id
+        AppActivate(pid)
     End Sub
 
     Private Sub 정보ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 정보ToolStripMenuItem.Click
