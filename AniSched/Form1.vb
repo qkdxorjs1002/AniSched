@@ -50,6 +50,9 @@
 
         Dim pid As Integer = Process.GetCurrentProcess.Id
         AppActivate(pid)
+        If My.Settings.form_front = False Then
+            Me.TopLevel = True
+        End If
     End Sub
 
     Private Sub 정보ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 정보ToolStripMenuItem.Click

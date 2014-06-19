@@ -14,7 +14,6 @@
         If Me.Opacity < 0.1 Then
             Timer2.Enabled = False
             Form1.Show()
-            Form1.Focus()
             Timer1.Enabled = False
             Me.Hide()
         End If
