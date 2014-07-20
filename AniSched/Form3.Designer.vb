@@ -23,16 +23,10 @@ Partial Class Form3
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
-        '
-        'Timer1
-        '
-        Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 2000
         '
         'Label10
         '
@@ -47,7 +41,8 @@ Partial Class Form3
         '
         'Timer2
         '
-        Me.Timer2.Interval = 10
+        Me.Timer2.Enabled = True
+        Me.Timer2.Interval = 2000
         '
         'Label1
         '
@@ -82,7 +77,6 @@ Partial Class Form3
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Timer2 As System.Windows.Forms.Timer
     Friend WithEvents Label1 As System.Windows.Forms.Label
