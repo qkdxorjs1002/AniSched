@@ -50,7 +50,6 @@ Partial Class Form1
         Me.적용ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.알림ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TESTToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AlertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BlinkToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.맨앞에위치ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.최소화ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -61,11 +60,12 @@ Partial Class Form1
         '
         'WebBrowser1
         '
-        Me.WebBrowser1.Location = New System.Drawing.Point(0, 24)
+        Me.WebBrowser1.AllowWebBrowserDrop = False
+        Me.WebBrowser1.Location = New System.Drawing.Point(0, -7)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
         Me.WebBrowser1.ScrollBarsEnabled = False
-        Me.WebBrowser1.Size = New System.Drawing.Size(304, 357)
+        Me.WebBrowser1.Size = New System.Drawing.Size(304, 388)
         Me.WebBrowser1.TabIndex = 12
         Me.WebBrowser1.TabStop = False
         Me.WebBrowser1.WebBrowserShortcutsEnabled = False
@@ -244,16 +244,10 @@ Partial Class Form1
         '
         'TESTToolStripMenuItem
         '
-        Me.TESTToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AlertToolStripMenuItem, Me.BlinkToolStripMenuItem})
+        Me.TESTToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BlinkToolStripMenuItem})
         Me.TESTToolStripMenuItem.Name = "TESTToolStripMenuItem"
         Me.TESTToolStripMenuItem.Size = New System.Drawing.Size(138, 22)
         Me.TESTToolStripMenuItem.Text = "TEST"
-        '
-        'AlertToolStripMenuItem
-        '
-        Me.AlertToolStripMenuItem.Name = "AlertToolStripMenuItem"
-        Me.AlertToolStripMenuItem.Size = New System.Drawing.Size(100, 22)
-        Me.AlertToolStripMenuItem.Text = "Alert"
         '
         'BlinkToolStripMenuItem
         '
@@ -289,7 +283,6 @@ Partial Class Form1
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(304, 381)
         Me.ControlBox = False
-        Me.Controls.Add(Me.WebBrowser1)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -298,6 +291,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Controls.Add(Me.WebBrowser1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
@@ -338,7 +332,6 @@ End Sub
     Friend WithEvents 투명도ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents 알림ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents TESTToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents AlertToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents BlinkToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents 최소화ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents 닫기ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
