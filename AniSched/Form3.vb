@@ -2,7 +2,7 @@
 
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         My.Settings.Reload()
-        Label10.Text = 0.4
+        Label10.Text = 0.5
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
