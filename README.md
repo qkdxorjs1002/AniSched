@@ -1,4 +1,4 @@
-AniSched
+AniSched for Windows
 ========
 
 VB Source of AniSched (VS2013)
